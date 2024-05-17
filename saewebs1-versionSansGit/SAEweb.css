@@ -1,0 +1,328 @@
+body
+{
+    background: linear-gradient(to bottom, #8ee4fa, #fabcf7, #8ee4fa);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.titre
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comic Sans MS',
+    'Arial', sans-serif;
+    color: rgb(253, 142, 160);
+}
+
+.titre-centre
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comic Sans MS',
+    'Arial', sans-serif;
+    color: rgb(253, 142, 160);
+    margin-right: 38%;
+    margin-left: 38%;
+}
+
+.PetitTexte
+{
+    font-family: 'Baloo Chettan', cursive;
+    font-weight: bold;
+    color: rgb(241, 58, 165);
+}
+
+.TexteLong
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Baloo Chettan', cursive;
+    font-weight: bold;
+    color: rgb(241, 58, 165);
+    text-align: justify;
+}
+
+.bouton{
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 150%;
+    color:rgb(150, 98, 219);
+    background-color: rgb(245, 243, 111);
+    width: 200px;
+    height: 100px;
+}
+
+.ligne
+{
+    /* regler probleme pour pouvoir cliquer seulement dans le drapeau et pas a l exterieur (probablement a cause du flex et margin left)*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.Langues
+{
+    display:flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-bottom: 100px;
+}
+
+.histoire {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+@media only screen
+{
+    .ligne
+    {
+        display: flex; 
+        flex-wrap: wrap;
+    }
+    .drapeau
+    {
+        width:auto;
+        margin: 10px;
+    }
+}
+
+.histoire:hover
+{
+    transition: transform 1s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.histoire:not(:hover) 
+{
+    transition: transform 2s ease-in-out;
+}
+
+.drapeau
+{
+    margin-left: 75px; /*possibilité de survoler l'image à cet endroit malgré le fait que ce soit un margin, à regler */
+    width: 150px;
+    height: 100px;
+}
+
+.petit-drapeau
+{
+    width: 75px;
+    height: 50px;
+}
+
+.drapeau:hover
+{
+    transition: transform 1s ease-in-out;
+    transform: rotate(15deg);
+}
+
+.drapeau:not(:hover) 
+{
+    transition: transform 2s ease-in-out;
+}
+
+.petit-drapeau:hover
+{
+    transition: transform 1s ease-in-out;
+    transform: rotate(15deg);
+}
+
+.petit-drapeau:not(:hover) 
+{
+    transition: transform 2s ease-in-out;
+}
+
+.go-page
+{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Comic Sans MS', cursive;
+    color: orange;
+    font-size: 25px;
+}
+
+.back-story-page
+{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Comic Sans MS', cursive;
+    color: rgb(247, 110, 30);
+    font-size: 20px;
+}
+
+.text-story{
+    font-family: 'Baloo Chettan', cursive;
+    font-weight: bold;
+    color: rgb(247, 30, 113);
+    font-size: 25px;
+}
+
+.word
+{
+    text-decoration:none;
+    color: inherit;
+}
+
+.word:hover
+{
+    color:rgb(37, 190, 119);
+}
+
+.left-text
+{
+    flex-grow: 1;
+    text-align: left;
+}
+
+.center-image
+{
+    text-align: center;
+}
+
+@keyframes sauter-image
+{
+    0%
+    {
+        transform: translateX(-50px);
+    }
+    50%
+    {
+        transform: translateX(50px);
+    }
+    100%
+    {
+        transform: translateX(-50px);
+    }
+}
+
+/*@keyframes tourner-image
+{
+    0%
+    {
+        transform: rotate(-20deg);
+    }
+    50%
+    {
+        transform: rotate(20deg)
+    }
+    100%
+    {
+        transform: rotate(-20deg);
+    }
+}*/
+
+.center-image-story
+{
+    animation: sauter-image 10s infinite;
+    display: flex;
+    justify-content: center;
+}
+
+/*.center-image-story:hover
+{
+    animation: tourner-image 5s infinite;
+}*/
+
+.image-story
+{
+    height: 300px;
+    width: 300px;
+}
+
+.center-text
+{
+    text-align: center;
+}
+
+.right-text
+{
+    flex-grow: 1;
+    text-align: right;
+}
+
+.arrow-left
+{
+    margin-left: 33%;
+}
+
+.arrows img
+{
+    width: 125px;
+    height: 100px;
+}
+
+.arrow-right
+{
+    margin-left: 10%;
+}
+
+.arrows img:hover
+{
+    transition: transform 1s ease-in-out;
+    transform:scale(150%);
+}
+
+.arrows img:not(:hover) 
+{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(100%);
+}
+
+.contact
+{
+    font-family: 'Comic Sans MS', cursive;
+    color: rgb(30, 88, 247);
+    font-size: 20px;
+}
+
+.mentionslegales
+{
+    color: white;
+}
+
+footer
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+ul
+{
+    list-style-type: none;
+    color: rgb(163, 49, 230);
+}
+
+li strong
+{
+    color:rgb(216, 53, 167);
+}
+
+.description-word
+{   
+    margin-left: 5%;
+    color:rgb(20, 80, 170);
+}
+
+.description-line
+{
+    margin-left: 5%;
+    color:rgb(189, 48, 202);
+    margin-right: 10%;
+}
+
+.same-line
+{
+    display: flex;
+}
+
+footer
+{
+    width:100%;
+    align-self: flex-end;
+}

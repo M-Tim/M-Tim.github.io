@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>La Pixel-War</title>
+    <link href="pixel_war.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <h1>LA PIXEL WAR</h1>
+    </header>
+    <main>
+        <div class="leftPart">
+            <!-- src="KirbyCouteau.jpg" alt="Kirby avec un couteau <3" -->
+            <div></div>
+            <img src="" alt="Une image de Kirby aléatoire">
+            <table class="tableauStats">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Equipe</th>
+                        <th>Dernière Modification</th>
+                        <th>Banni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="midPart"></div>
+        <div class="leftPart">
+            <div>
+                <p class="entête">Identification obligatoire</p>
+                <div class="contenu">
+                    <input id="inputUID" type="password" placeholder="Entrez votre ID">
+                    <button id="voirTexte">Afficher/Cacher l'UID</button>
+                </div>
+            </div>
+            <div>
+                <p class="entête">Choisir une couleur</p>
+                <div class="contenu">
+                    <input id="couleurPixel" type="color">
+                </div>
+            </div>
+            <div>
+                <p class="entête">Temps d'attente avant modification</p>
+                <div class="contenu">
+                    <p id="pixelAttend">Vous pouvez modifier un pixel.</p>
+                </div>
+            </div>
+            <div>
+                <p class="entête">Choisir votre équipe : </p>
+                <div class="contenu equipe">
+                    <button value="1">Equipe 1</button>
+                    <button value="2">Equipe 2</button>
+                    <button value="3">Equipe 3</button>
+                    <button value="4">Equipe 4</button>
+                </div>
+            </div>
+            <div>
+                <p class="entête">Dernière information retournée par le serveur : </p>
+                <div class="contenu">
+                    <p class="infoServeur">En attente d'un retour du serveur.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="tableauPixel">
+
+    </div>
+    <script src="pixel_war.js"></script>
+</body>
+
+</html>

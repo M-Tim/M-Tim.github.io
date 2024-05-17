@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-text,
+.right-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.center-image {
+    text-align: center;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 0 5px;
+}

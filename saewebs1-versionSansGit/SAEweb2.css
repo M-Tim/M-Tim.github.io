@@ -1,0 +1,50 @@
+/* FAIT PAR CHATGPT */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sections-container
+{
+    display: flex;
+    /* Empeche de passer à la ligne */
+    flex-wrap: nowrap;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+}
+
+.item {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 164, 164)222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+p {
+    text-align: center;
+}
+
+.separator {
+    height: 20px;
+    background-color: #eee;
+}

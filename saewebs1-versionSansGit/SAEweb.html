@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learn_A_Story (menu principal)</title>
+    <link rel="stylesheet" href="SAEweb.css">
+</head>
+
+<body>
+    <!-- avoir des bords de chaque cotes du site -->
+    <div class="same-line">
+        <h1 class="titre-centre">Learn A Story</h1>
+        <div class="menuDeroulant">
+            <label for="pays" class="PetitTexte">Sélectionnez une langue :</label>
+            <select id="pays">
+                <!-- faire un fond selon les pays et mettre le pays selectionné en premier-->
+                <option value="français">Français</option>
+                <option value="anglais">Anglais</option>
+                <option value="japonais">Japonais</option>
+            </select>
+            <!-- faire un bouton pour valider -->
+        </div>
+        
+    </div>
+    <h2 class="titre">~Learn a language with a story ♪~</h2>
+    
+
+    <div class="menuDeroulant">
+        <input type="text" placeholder="Recherche ton histoire...">
+    </div>
+    <br>
+    <div class="ligne">
+        <!-- renvoyer vers une autre page avec un bouton en bas à droite et un bouton en bas à gauche pour aller en avant et en arriere dans l histoire, avoir un bouton en haut a gauche pour revenir à ce menu (a toutes les pages), avoir un bouton en haut à droite pour changer la langue, et avoir à chaque pages une dizaine de mots racontant une histoire que l on pourrait cliquer pour voir leur signification dans une autre langue avec des details dou apprendre avec une histoire -->
+        <a href="SAEweb.html">
+            <button class="bouton"><strong>The stories</strong></button>
+        </a>
+        <a href="SAEwebStory1.html">
+            <img class="histoire" src="https://cdn.pixabay.com/photo/2018/02/24/10/02/apple-3177692_640.png">
+        </a>
+        <a href="SAEwebStory1.html">
+            <img class="histoire" src="https://cdn.pixabay.com/photo/2023/11/12/11/51/pear-8382919_640.jpg">
+        </a>
+    </div>
+
+    <div class="menuDeroulant">
+        <label for="pays" class="PetitTexte">Sélectionnez un pays :</label>
+        <select id="pays">
+            <!-- faire un fond selon les pays et mettre le pays selectionné en premier-->
+            <option value="france">France</option>
+            <option value="royaume-unis">Royaume-Uni</option>
+            <option value="etats-unis">Etats-Unis</option>
+            <option value="japon">Japon</option>
+        </select>
+        <!-- faire un bouton pour valider -->
+    </div>
+    <br>
+    <div class="ligne">  
+        <a href="SAEweb.html">
+            <button class="bouton"><strong>À propos des Pays</strong></button>
+        </a>
+        <!-- images des drapeaux prises depuis les pages pixabay des pays respectifs -->
+        <a href="France.html">
+            <img class="drapeau" src="https://cdn.pixabay.com/photo/2012/04/11/15/19/france-28463_640.png" alt="drapeau de la France">
+        </a> 
+        <a href="UK.html">
+            <img class="drapeau" src="https://cdn.pixabay.com/photo/2012/04/10/16/14/union-jack-26119_640.png" alt="drapeau du Royaume-Uni">
+        </a>
+        <a href="USA.html">
+            <img class="drapeau" src="https://cdn.pixabay.com/photo/2017/01/07/16/55/usa-1960922_640.jpg" alt="drapeau des Etats-Unis">
+        </a>
+        <a href="JPN.html">
+            <img class="drapeau" src="https://cdn.pixabay.com/photo/2013/07/13/14/15/japan-162328_1280.png" alt="drapeau du Japon">
+        </a>
+    </div>
+
+    <a href="Apropos.html">
+        <h3 class="go-page">A propos de nous...</h3>
+    </a>
+
+    <footer>
+        <ul>
+            <li><h3>Contact</h3></li>
+            <li><strong>MAIL : <a href="SAEweb.html" class="contacts">learnastory@mail.com</a></strong></li>
+            <li><strong>téléphone : <a href="SAEweb.html" class="contacts">+33 6 11 22 33 22</a></strong></li>
+        </ul>
+        <ul>
+            <li><h3>Mentions légales</h3></li>
+            <li><strong><a href="mentionslegales.html" class="mentionslegales">Cliquez-ici pour voir les mentions légales</a></strong></li>
+        </ul>
+    </footer>
+</body>
+</html>
