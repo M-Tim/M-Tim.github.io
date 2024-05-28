@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    height: 220px;
+    height: 180px;
     width: 320px;
     background-image: url(fdp.jpg);
     display: flex;
@@ -25,6 +25,7 @@
     font-weight: bold;
     background-color: lightblue;
     transition: all 0.5s;
+    z-index: 1;
   }
   
   .card::before {
@@ -45,19 +46,24 @@
     height: 100%;
     border-radius: 15px;
     transition: all 0.5s;
+    background-color:blueviolet;
   }
   
-  .card #un:hover:after {
-    content: "TEST 1";
+  /* 
+  .card:hover #id:after {
+    position: absolute;
+    left: 120px;
+    content: "TEST";
     text-align: left;
-  }
+    z-index: 500;
+  } 
+  */
 
-  .card #deux:hover:after {
-    content: "affichage 2";
-    text-align: center;
-  }
-
-  .card #trois:hover:after {
-    content: "HAHA TU T'Y ATTENDAIS PAS HEIN??? 3";
-    text-align: right;
+  .card:hover #un:after {
+    content: "TEXT";
+    position: absolute;
+    background-image: url("retex_SAE-BD-S1.png");
+    background-size: contain;
+    text-align: left;
+    z-index: 2;
   }
