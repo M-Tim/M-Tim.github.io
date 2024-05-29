@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 .card {
     position: relative;
-    height: 180px;
-    width: 320px;
+    height: 282px;
+    width: 500px;
     background-image: url(fdp.jpg);
     display: flex;
     align-items: center;
@@ -10,6 +12,7 @@
     font-weight: bold;
     border-radius: 15px;
     cursor: pointer;
+    margin-bottom: 100px;
   }
   
   .card::before,
@@ -47,23 +50,28 @@
     border-radius: 15px;
     transition: all 0.5s;
     background-color:blueviolet;
+    z-index: 1;
   }
   
-  /* 
-  .card:hover #id:after {
-    position: absolute;
-    left: 120px;
-    content: "TEST";
-    text-align: left;
-    z-index: 500;
-  } 
-  */
 
-  .card:hover #un:after {
-    content: "TEXT";
-    position: absolute;
+  #un .card{
+    background-image: url("Logo/Logo-SQL-Figma_V2.png");
+    color: black;
+    font-size: bold;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+  }
+
+  #un .card:hover:after {
+    left: 0%;
+    top: 0%;
     background-image: url("retex_SAE-BD-S1.png");
     background-size: contain;
-    text-align: left;
     z-index: 2;
+  }
+
+  .retex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
   }
