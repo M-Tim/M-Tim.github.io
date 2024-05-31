@@ -27,7 +27,7 @@ template initiale : by menezes11
 
 .uiverse_hoverme:hover {
     box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
-    transition-delay: 0.6s;
+    transition-delay: 0.1s;
 }
 
 .uiverse_hoverme span {
