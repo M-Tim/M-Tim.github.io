@@ -1,5 +1,6 @@
 html {
     background-color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 img {
@@ -8,4 +9,17 @@ img {
     justify-content: right;
 }
 
-button {}
+th {
+    padding-bottom: 50px;
+}
+
+td {
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
