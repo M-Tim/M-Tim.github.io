@@ -1,0 +1,65 @@
+/* 
+Bouton récupéré sur uiverse
+Button by WhiteNervosa
+https://uiverse.io/WhiteNervosa/popular-ladybug-27 
+*/
+
+.hover-over {
+    text-decoration: none;
+    font-size: 13px;
+    color: #5622e6;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.hover-over:focus,
+.hover-over:hover {
+    color: #0e7fdc;
+}
+
+#SW .hover-over:focus,
+#SW .hover-over:hover {
+    color: #b20add;
+}
+
+#PW .hover-over:focus,
+#PW .hover-over:hover {
+    color: #9c9e0a;
+}
+
+.hover-over:focus:after,
+.hover-over:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+
+.hover-over:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #4177f6;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+#SW .hover-over:after {
+    background-color: #069dfb;
+}
+
+#PW .hover-over:after {
+    background-color: #af0adc;
+}

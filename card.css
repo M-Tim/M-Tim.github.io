@@ -28,9 +28,6 @@
   background-color: lightblue;
   transition: all 0.5s;
   z-index: 1;
-}
-
-.card::after {
   bottom: 0;
   left: 0;
   border-radius: 0 100% 0 25px;

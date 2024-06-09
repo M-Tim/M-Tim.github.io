@@ -8,6 +8,7 @@
     <link href="navbar.css" rel="stylesheet">
     <link href="card.css" rel="stylesheet">
     <link href="button_HoverMe.css" rel="stylesheet">
+    <link href="button_hover-over.css" rel="stylesheet">
 </head>
 
 <body>
@@ -70,20 +71,31 @@
             </div>
         </div>
 
+        <div class="centrer">
+            <a class="all-retex" href="Retex-pdf/All-retex.pdf" download="Retex-pdf/all-retex">
+                <h3>Télécharger tout les projets</h3>
+            </a>
+        </div>
+        <br>
+
         <h2>Mes premiers sites web : </h2>
         <h4>(Cliquez dessus pour accéder à mes autres sites)</h4>
         <div class="boutons-sites">
-            <div class="premier-sites">
+            <div class="centrer">
                 <button class="uiverse_hoverme">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span> <a href="saewebs1-versionSansGit/SAEweb.html">Mon tout premier site HTML/CSS</a>
                 </button>
-                <a href="#site-web">(voir le retex "Projet site web")</a>
+                <div id="SW">
+                    <a class="hover-over" href="#site-web">
+                        <p>voir le retex "Projet site web"</p>
+                    </a>
+                </div>
             </div>
 
-            <div class="premier-sites">
+            <div class="centrer">
                 <button class="uiverse_hoverme">
                     <span></span>
                     <span></span>
@@ -91,7 +103,11 @@
                     <span></span> <a href="js-pixelwar-versionSansGit/pixel_war.html">Mon tout premier site
                         JavaScript</a>
                 </button>
-                <a href="#site-js">(voir le retex "Projet site web")</a>
+                <div id="PW">
+                    <a class="hover-over" href="#site-js">
+                        <p>voir le retex "Projet Pixel War"</p>
+                    </a>
+                </div>
             </div>
         </div>
     </main>

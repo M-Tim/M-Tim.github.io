@@ -22,15 +22,16 @@ td {
     margin-bottom: 50px;
 }
 
-.premier-sites {
+.centrer {
     display: flex;
     flex-direction: column;
-    justify-self: auto;
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
-.premier-sites button,
-.premier-sites a {
+.centrer button,
+.centrer a {
     display: flex;
     justify-content: space-evenly;
 }
@@ -60,4 +61,20 @@ td {
     min-width: 200px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.all-retex {
+    padding: 15px;
+    color: #e9f5f8;
+    background-color: rgb(105, 108, 119);
+    text-decoration: none;
+    margin-left: 30px;
+    box-shadow: 0 5px 75px rgb(42, 26, 44, 1);
+    max-width: 230px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.all-retex:hover {
+    background-color: rgb(76, 107, 143);
 }
