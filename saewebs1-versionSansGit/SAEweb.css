@@ -1,42 +1,37 @@
-body
-{
+body {
     background: linear-gradient(to bottom, #8ee4fa, #fabcf7, #8ee4fa);
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-.titre
-{
+.titre {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Comic Sans MS',
-    'Arial', sans-serif;
+        'Arial', sans-serif;
     color: rgb(253, 142, 160);
 }
 
-.titre-centre
-{
+.titre-centre {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Comic Sans MS',
-    'Arial', sans-serif;
+        'Arial', sans-serif;
     color: rgb(253, 142, 160);
     margin-right: 38%;
     margin-left: 38%;
 }
 
-.PetitTexte
-{
+.PetitTexte {
     font-family: 'Baloo Chettan', cursive;
     font-weight: bold;
     color: rgb(241, 58, 165);
 }
 
-.TexteLong
-{
+.TexteLong {
     margin-left: 25%;
     margin-right: 25%;
     font-family: 'Baloo Chettan', cursive;
@@ -45,27 +40,25 @@ body
     text-align: justify;
 }
 
-.bouton{
+.bouton {
     font-family: 'Bubblegum Sans', cursive;
     font-size: 150%;
-    color:rgb(150, 98, 219);
+    color: rgb(150, 98, 219);
     background-color: rgb(245, 243, 111);
     width: 200px;
     height: 100px;
 }
 
-.ligne
-{
+.ligne {
     /* regler probleme pour pouvoir cliquer seulement dans le drapeau et pas a l exterieur (probablement a cause du flex et margin left)*/
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
 }
 
-.Langues
-{
-    display:flex;
+.Langues {
+    display: flex;
     flex-direction: row;
     /* justify-content: space-between; */
     margin-bottom: 100px;
@@ -77,68 +70,58 @@ body
     border-radius: 50px;
 }
 
-@media only screen
-{
-    .ligne
-    {
-        display: flex; 
+@media only screen {
+    .ligne {
+        display: flex;
         flex-wrap: wrap;
     }
-    .drapeau
-    {
-        width:auto;
+
+    .drapeau {
+        width: auto;
         margin: 10px;
     }
 }
 
-.histoire:hover
-{
+.histoire:hover {
     transition: transform 1s ease-in-out;
     transform: rotate(360deg);
 }
 
-.histoire:not(:hover) 
-{
+.histoire:not(:hover) {
     transition: transform 2s ease-in-out;
 }
 
-.drapeau
-{
-    margin-left: 75px; /*possibilité de survoler l'image à cet endroit malgré le fait que ce soit un margin, à regler */
+.drapeau {
+    margin-left: 75px;
+    /*possibilité de survoler l'image à cet endroit malgré le fait que ce soit un margin, à regler */
     width: 150px;
     height: 100px;
 }
 
-.petit-drapeau
-{
+.petit-drapeau {
     width: 75px;
     height: 50px;
 }
 
-.drapeau:hover
-{
+.drapeau:hover {
     transition: transform 1s ease-in-out;
     transform: rotate(15deg);
 }
 
-.drapeau:not(:hover) 
-{
+.drapeau:not(:hover) {
     transition: transform 2s ease-in-out;
 }
 
-.petit-drapeau:hover
-{
+.petit-drapeau:hover {
     transition: transform 1s ease-in-out;
     transform: rotate(15deg);
 }
 
-.petit-drapeau:not(:hover) 
-{
+.petit-drapeau:not(:hover) {
     transition: transform 2s ease-in-out;
 }
 
-.go-page
-{
+.go-page {
     text-decoration: none;
     color: inherit;
     font-family: 'Comic Sans MS', cursive;
@@ -146,8 +129,7 @@ body
     font-size: 25px;
 }
 
-.back-story-page
-{
+.back-story-page {
     text-decoration: none;
     color: inherit;
     font-family: 'Comic Sans MS', cursive;
@@ -155,47 +137,41 @@ body
     font-size: 20px;
 }
 
-.text-story{
+.text-story {
     font-family: 'Baloo Chettan', cursive;
     font-weight: bold;
     color: rgb(247, 30, 113);
     font-size: 25px;
 }
 
-.word
-{
-    text-decoration:none;
+.word {
+    text-decoration: none;
     color: inherit;
 }
 
-.word:hover
-{
-    color:rgb(37, 190, 119);
+.word:hover {
+    color: rgb(37, 190, 119);
 }
 
-.left-text
-{
+.left-text {
     flex-grow: 1;
     text-align: left;
 }
 
-.center-image
-{
+.center-image {
     text-align: center;
 }
 
-@keyframes sauter-image
-{
-    0%
-    {
+@keyframes sauter-image {
+    0% {
         transform: translateX(-50px);
     }
-    50%
-    {
+
+    50% {
         transform: translateX(50px);
     }
-    100%
-    {
+
+    100% {
         transform: translateX(-50px);
     }
 }
@@ -216,8 +192,7 @@ body
     }
 }*/
 
-.center-image-story
-{
+.center-image-story {
     animation: sauter-image 10s infinite;
     display: flex;
     justify-content: center;
@@ -228,101 +203,97 @@ body
     animation: tourner-image 5s infinite;
 }*/
 
-.image-story
-{
+.image-story {
     height: 300px;
     width: 300px;
 }
 
-.center-text
-{
+.center-text {
     text-align: center;
 }
 
-.right-text
-{
+.right-text {
     flex-grow: 1;
     text-align: right;
 }
 
-.arrow-left
-{
+.arrow-left {
     margin-left: 33%;
 }
 
-.arrows img
-{
+.arrows img {
     width: 125px;
     height: 100px;
 }
 
-.arrow-right
-{
+.arrow-right {
     margin-left: 10%;
 }
 
-.arrows img:hover
-{
+.arrows img:hover {
     transition: transform 1s ease-in-out;
-    transform:scale(150%);
+    transform: scale(150%);
 }
 
-.arrows img:not(:hover) 
-{
+.arrows img:not(:hover) {
     transition: transform 0.5s ease-in-out;
     transform: scale(100%);
 }
 
-.contact
-{
+.contact {
     font-family: 'Comic Sans MS', cursive;
     color: rgb(30, 88, 247);
     font-size: 20px;
 }
 
-.mentionslegales
-{
+.mentionslegales {
     color: white;
 }
 
-footer
-{
+footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
 }
 
-ul
-{
+ul {
     list-style-type: none;
     color: rgb(163, 49, 230);
 }
 
-li strong
-{
-    color:rgb(216, 53, 167);
+li strong {
+    color: rgb(216, 53, 167);
 }
 
-.description-word
-{   
+.description-word {
     margin-left: 5%;
-    color:rgb(20, 80, 170);
+    color: rgb(20, 80, 170);
 }
 
-.description-line
-{
+.description-line {
     margin-left: 5%;
-    color:rgb(189, 48, 202);
+    color: rgb(189, 48, 202);
     margin-right: 10%;
 }
 
-.same-line
-{
+.same-line {
     display: flex;
 }
 
-footer
-{
-    width:100%;
+footer {
+    width: 100%;
     align-self: flex-end;
+}
+
+/* AJOUT POUR LE SITE GITHUB : */
+
+#page-projets a {
+    display: flex;
+    padding: 25px;
+    background-color: rgb(84, 85, 89);
+    color: #e9f5f8;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 30px;
+    box-shadow: 0 5px 75px rgb(42, 26, 44, 1);
 }
