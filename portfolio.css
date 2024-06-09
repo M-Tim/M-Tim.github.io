@@ -47,7 +47,7 @@ td {
 }
 
 #tom-lunettes {
-    background-image: url("Tom/Tom_doigt-lunettes.jpeg");
+    background-image: url("Tom/Tom_doigt-lunettes.png");
     min-height: 200px;
     min-width: 200px;
     background-size: contain;
@@ -55,7 +55,7 @@ td {
 }
 
 #tom-lunettes:hover {
-    background-image: url("Tom/Tom_baisse-lunettes.jpeg");
+    background-image: url("Tom/Tom_baisse-lunettes.png");
     min-height: 200px;
     min-width: 200px;
     background-size: contain;
