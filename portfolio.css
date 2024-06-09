@@ -19,7 +19,45 @@ td {
 }
 
 .contact {
+    margin-bottom: 50px;
+}
+
+.premier-sites {
+    display: flex;
+    flex-direction: column;
+    justify-self: auto;
+    margin-bottom: 30px;
+}
+
+.premier-sites button,
+.premier-sites a {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+}
+
+.page {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+}
+
+.contenu {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#tom-lunettes {
+    background-image: url("Tom/Tom_doigt-lunettes.jpeg");
+    min-height: 200px;
+    min-width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#tom-lunettes:hover {
+    background-image: url("Tom/Tom_baisse-lunettes.jpeg");
+    min-height: 200px;
+    min-width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
