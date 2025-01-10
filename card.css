@@ -76,7 +76,8 @@
   background-image: url("Retex/retex_SAE-web_S1.png");
 }
 
-#retex-pixelwar .card {
+#retex-pixelwar .card,
+#retex-sonic .card {
   background-size: contain;
   background-image: url("Logo/Logo-JS.png");
   color: black;
@@ -89,7 +90,8 @@
 
 #retex-jpo .card,
 #retex-odomo .card,
-#retex-towa .card {
+#retex-towa .card,
+#retex-labyrinthe .card {
   background-size: contain;
   background-image: url("Logo/Logo-Java.png");
   color: black;
@@ -108,7 +110,8 @@
   background-image: url("Retex/retex_SAE-Towa.png");
 }
 
-#retex-réseaux .card {
+#retex-réseaux .card,
+#retex-mitm .card {
   background-size: contain;
   background-image: url("Logo/Logo_NextCloud.png");
   color: black;
@@ -117,4 +120,27 @@
 
 #retex-réseaux .card:hover:after {
   background-image: url("Retex/retex_SAE-Réseaux.png");
+}
+
+#retex-labyrinthe .card:hover:after {
+  background-image: url("Retex/retex_SAE-Labyrinrthe_BUT2-S3.png");
+}
+
+#retex-sonic .card:hover:after {
+  background-image: url("Retex/retex_SonicRingRun.png");
+}
+
+#retex-mitm .card:hover:after {
+  background-image: url("Retex/retex_SAE-Réseaux_BUT2-S3.png");
+}
+
+#retex-crypto .card:hover:after {
+  background-image: url("Retex/retex_SAE-Crypto_BUT2-S3.png");
+}
+
+#retex-crypto .card {
+  background-size: contain;
+  background-image: url("Logo/Logo_Python.png");
+  color: black;
+  text-decoration: none;
 }
