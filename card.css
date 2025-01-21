@@ -2,6 +2,7 @@
 
 .card {
   position: relative;
+  margin: 25px;
   height: 282px;
   width: 500px;
   background-image: url(fdp.jpg);
@@ -143,4 +144,46 @@
   background-image: url("Logo/Logo_Python.png");
   color: black;
   text-decoration: none;
+}
+
+/* Bouton de téléchargement avec bord arrondi et fond bleu léger */
+.btn-download {
+  all: unset;
+  /* Cela annule tous les styles hérités du bouton */
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background-color: rgba(0, 123, 255, 0.3);
+  /* Fond bleu léger (rgba avec alpha) */
+  border-radius: 50%;
+  /* Arrondir le bouton pour qu'il soit circulaire */
+  padding: 10px;
+  /* Un peu de padding pour l'espace autour du logo */
+  cursor: pointer;
+  border: 2px solid rgba(0, 123, 255, 0.5);
+  /* Bordure bleue plus marquée */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Effet de transition */
+  z-index: 3;
+}
+
+/* Effet de survol (hover) */
+.btn-download:hover {
+  background-color: rgba(0, 123, 255, 0.5);
+  /* Fond bleu un peu plus opaque */
+  transform: scale(1.1);
+  /* Légère agrandissement du bouton lors du survol */
+}
+
+/* S'assurer que l'image ne dépasse pas */
+.btn-download img {
+  width: 30px;
+  /* Ajuste la taille du bouton selon ton besoin */
+  height: auto;
+}
+
+/* Ajouter un effet hover pour l'image */
+.btn-download:hover img {
+  opacity: 0.8;
+  /* Légère opacité lors du survol */
 }

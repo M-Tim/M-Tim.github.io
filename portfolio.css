@@ -78,3 +78,52 @@ td {
 .all-retex:hover {
     background-color: rgb(76, 107, 143);
 }
+
+/* Conteneur du tooltip */
+.tooltip {
+    position: relative;
+    /* Nécessaire pour positionner le texte explicatif */
+    display: inline-block;
+}
+
+/* Texte explicatif caché */
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+
+    /* Positionnement */
+    position: absolute;
+    bottom: 120%;
+    /* Décalage au-dessus de l'élément */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    /* Effet de transition */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Flèche du tooltip */
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* En dessous du tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Afficher le texte explicatif au survol */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
