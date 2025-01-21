@@ -35,6 +35,11 @@ https://uiverse.io/WhiteNervosa/popular-ladybug-27
     color: #9c9e0a;
 }
 
+#SRR .hover-over:focus,
+#SRR .hover-over:hover {
+    color: #0c9e9e;
+}
+
 .hover-over:focus:after,
 .hover-over:hover:after {
     width: 100%;
@@ -62,4 +67,8 @@ https://uiverse.io/WhiteNervosa/popular-ladybug-27
 
 #PW .hover-over:after {
     background-color: #af0adc;
+}
+
+#SRR .hover-over:after {
+    background-color: #16ad49;
 }
