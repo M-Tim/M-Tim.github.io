@@ -45,6 +45,8 @@ td {
 .contenu {
     margin-left: 10%;
     margin-right: 10%;
+    display: row;
+    justify-content: center;
 }
 
 #tom-lunettes {

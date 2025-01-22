@@ -187,3 +187,69 @@
   opacity: 0.8;
   /* Légère opacité lors du survol */
 }
+
+.card-decoration {
+  /* Dimensions */
+  display: inline-block;
+  /* S'adapte à son contenu */
+  max-width: 100%;
+  /* Empêche de dépasser la largeur de son conteneur parent */
+  padding: 16px;
+  /* Espacement interne */
+  margin: 8px;
+  /* Espacement externe */
+
+  /* Apparence */
+  border: 1px solid #ccc;
+  /* Bordure fine et grise */
+  border-radius: 8px;
+  /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Légère ombre */
+  background-color: #fff;
+  /* Fond blanc */
+  overflow: hidden;
+  /* Empêche le débordement */
+
+  /* Texte */
+  font-family: Arial, sans-serif;
+}
+
+.card-decoration h2 {
+  margin: 0 0 12px;
+  /* Espace sous le titre */
+  font-size: 1.5em;
+  /* Taille du texte */
+}
+
+.card-decoration p {
+  margin: 0 0 16px;
+  /* Espace sous le paragraphe */
+  font-size: 1em;
+  line-height: 1.5;
+  /* Meilleure lisibilité */
+}
+
+.card-decoration button {
+  padding: 8px 16px;
+  /* Espacement interne */
+  font-size: 1em;
+  color: #fff;
+  /* Texte blanc */
+  background-color: #007BFF;
+  /* Bouton bleu */
+  border: none;
+  border-radius: 4px;
+  /* Coins arrondis */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-decoration button:hover {
+  background-color: #0056b3;
+  /* Couleur plus foncée au survol */
+}
+
+#QNA {
+  max-width: 30%;
+}
