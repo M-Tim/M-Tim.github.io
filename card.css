@@ -146,6 +146,28 @@
   text-decoration: none;
 }
 
+#retex-robocupManager .card {
+  background-size: contain;
+  background-image: url("Logo/Logo-Symfony.png");
+  color: black;
+  text-decoration: none;
+}
+
+#retex-citadelles .card {
+  background-size: contain;
+  background-image: url("Logo/Logo-Godot.png");
+  color: black;
+  text-decoration: none;
+}
+
+#retex-robocupManager .card:hover:after {
+  background-image: url("Retex/retex_SAE-Symfony_BUT2-S3.png");
+}
+
+#retex-citadelles .card:hover:after {
+  background-image: url("Retex/retex_CitadellesOnline.png");
+}
+
 /* Bouton de téléchargement avec bord arrondi et fond bleu léger */
 .btn-download {
   all: unset;
