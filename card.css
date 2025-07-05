@@ -139,7 +139,8 @@
   background-image: url("Retex/retex_SAE-Crypto_BUT2-S3.png");
 }
 
-#retex-crypto .card {
+#retex-crypto .card,
+#retex-courbesElliptiques .card {
   background-size: contain;
   background-image: url("Logo/Logo_Python.png");
   color: black;
@@ -166,6 +167,10 @@
 
 #retex-citadelles .card:hover:after {
   background-image: url("Retex/retex_CitadellesOnline.png");
+}
+
+#retex-courbesElliptiques .card:hover:after {
+  background-image: url("Retex/retex_SAE-CourbesElliptiques.png");
 }
 
 /* Bouton de téléchargement avec bord arrondi et fond bleu léger */
